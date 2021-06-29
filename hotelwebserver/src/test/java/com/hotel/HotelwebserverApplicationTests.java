@@ -1,10 +1,10 @@
-package com.hotelwebserver;
+package com.hotel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HotelReservationApplicationTests {
+class HotelwebserverApplicationTests {
 
 	@Test
 	void contextLoads() {

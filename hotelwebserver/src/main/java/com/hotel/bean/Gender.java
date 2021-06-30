@@ -1,7 +1,7 @@
 package com.hotel.bean;
 
 public enum Gender {
-	MALE(1),FEMALE(2),NONIDENTIFIED(3);
+	MALE(0),FEMALE(1),NONIDENTIFIED(2);
 	
 	private int code;
 	

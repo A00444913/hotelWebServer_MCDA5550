@@ -14,16 +14,20 @@ Response parameters:
 |availability|boolean|only two values: true and false|
 
 2.
-Request url: http://Hotelreservation-env.eba-j7i7z6jw.us-east-2.elasticbeanstalk.com/reservatio
+Request url: http://Hotelreservation-env.eba-j7i7z6jw.us-east-2.elasticbeanstalk.com/reservation
 
 Request method: POST
 
 Request body: JSON
 
 { "hotel_name": "The Halifax Hotel",
+
    "checkin": "20211103",
+   
    "checkout": "20211114",
+   
     "guests_list": [ 
+    
            { "guest_name" : "ZZ",
              "age":22,
              "gender": 0
@@ -32,6 +36,7 @@ Request body: JSON
              "age":18,
              "gender": 1
            }
+           
        ]
 }
 

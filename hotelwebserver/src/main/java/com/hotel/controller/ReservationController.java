@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hotel.bean.Confirmation;
 import com.hotel.bean.Gender;
 import com.hotel.bean.Guest;
 import com.hotel.bean.Reservation;
@@ -24,7 +25,7 @@ public class ReservationController {
 
 	
 	@RequestMapping(value="/reservation",method=RequestMethod.POST,consumes="application/json")
-	public String reservation(@RequestBody Reservation reservationEntity) {
+	public Confirmation reservation(@RequestBody Reservation reservationEntity) {
 		String hotel_name = reservationEntity.getHotel_name();
 		String checkin = reservationEntity.getCheckin();
 		String checkout = reservationEntity.getCheckout();
@@ -50,7 +51,11 @@ public class ReservationController {
 		
 		reserRepo.save(reserv1);
 		
-		return "comfirmation number is :"+reserv1.getId();
+		Confirmation confirmation = new Confirmation();
+		confirmation.setConfirmation_number(reserv1.getId().toString());
+		
+		
+		return confirmation;
 		//return test;
 		
 		

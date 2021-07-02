@@ -43,7 +43,7 @@ Request body: JSON
 Request parameters:
 |Key|Type|Describe|
 |------|------|------|
-|hotel_name|String|It's the unique number for hotel|
+|hotel_name|String||
 |checkin|String|It's the checkin time|
 |checkout|String|It's the checkout time|
 |guests_list|Set|This is a collection of information about all guests|

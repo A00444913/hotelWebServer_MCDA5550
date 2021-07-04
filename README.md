@@ -1,7 +1,7 @@
 # hotelWebServer_MCDA5550
 
 1.
-Request url: http://Hotelreservation-env.eba-j7i7z6jw.us-east-2.elasticbeanstalk.com/hotelList
+Request url: http://jinting.us-east-1.elasticbeanstalk.com/hotelList
 
 Request method: GET
 
@@ -14,7 +14,7 @@ Response parameters:
 |availability|boolean|only two values: true and false|
 
 2.
-Request url: http://Hotelreservation-env.eba-j7i7z6jw.us-east-2.elasticbeanstalk.com/reservation
+Request url: http://jinting.us-east-1.elasticbeanstalk.com/reservation
 
 Request method: POST
 
